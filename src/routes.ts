@@ -13,7 +13,6 @@ const router = Router();
 router.get('/', (_req, res) => res.send(swaggerSpec));
 router.get("/report", checkReport, gameReportErrorHandler, new Report().getGameReport);
 
-router.use('/swagger', swaggerUI.serve);
-router.get('/swagger', swaggerUI.setup(swaggerSpec));
+router.use('/swagger', swaggerUI.serve, swaggerUI.setup(swaggerSpec));
 
 export default router;
