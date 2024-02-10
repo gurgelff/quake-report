@@ -2,6 +2,8 @@
 
 Quake Report is a log analyzer designed for Quake Arena games. It processes game logs and provides insightful reports about the matches.
 
+![quake-report](https://github.com/gurgelff/quake-report/assets/8779528/55bd81ff-24a1-4232-9682-f3f55a477dc1)
+
 ## Table of Contents
 
 - [Getting Started](#getting-started)
