@@ -1,4 +1,4 @@
-export interface InvalidRequestError extends Error{
+export interface InvalidRequestError extends Error {
     status: number;
     message: string;
 }
