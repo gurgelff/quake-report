@@ -12,6 +12,7 @@ Quake Report is a log analyzer designed for Quake Arena games. It processes game
 - [Usage](#usage)
   - [Docker](#docker)
   - [Running Locally](#running-locally)
+  - [Interacting with the API](#interacting-with-the-api)
 - [Troubleshooting](#troubleshooting)
 - [Configuration](#configuration)
 - [Contributing](#contributing)
@@ -68,6 +69,13 @@ To run the application locally, use the following command:
 ```bash
   pnpm start
 ```
+
+### Interacting with the API
+The application provides an API to interact with the game reports. The OpenAPI raw documentation is available at the index `/`.
+
+The report endpoint is available at `/report`. It accepts a GET request with an optional `id` parameter containing the game id (defaults to 1 if not provided or invalid). The response will be a JSON object containing the report.
+
+There's also an interactive documentaion interface built with Swagger UI available at `/swagger`.
 
 ## Troubleshooting
 If you have any problems with the Docker container, try the following:
